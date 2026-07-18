@@ -1,0 +1,30 @@
+{
+  "name": "genpark-ai-calls-phone-reporter-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI outbound call simulator with structured field collection.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "calls",
+    "phone",
+    "outbound"
+  ],
+  "inputs": {
+    "business_name": {
+      "type": "string"
+    },
+    "query_fields": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "call_summary": {
+      "type": "object"
+    },
+    "ai_disclosed": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
